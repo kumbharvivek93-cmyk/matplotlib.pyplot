@@ -1,0 +1,10 @@
+# import matplotlib.pyplot as plt
+
+# x=["carb","proteins","dairy","sweets"]
+# y=[12,9,5,2]
+# plt.title("DAILY INTAKE OF COLORIES",fontsize=30,color="black",fontweight="bold")
+# plt.xlabel("food",fontsize=25,color="black",fontweight="bold")
+# plt.ylabel("calories",fontsize=25,color="black",fontweight="bold")  # bar charts
+
+# plt.bar(x,y,color="pink")
+# plt.show()
