@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df=pd.read_csv("/home/vivek2006/Desktop/python/pandaspra.csv")
+print(df.to_string())
+info=df["Total"]
+labels=df["Product"]
+# plt.bar(labels,info,color="green")
+# plt.legend()
+# plt.title("VIVEKS ECOMERS",fontsize=30,color="#0F009A",fontweight="bold")
+# plt.xlabel("PRODUCTS NAME",fontsize=15)
+# plt.ylabel("TOTAL",fontsize=15) # this is the simple code that showing the pandas integrated with the matpotlib
+# also in pie format
+plt.pie(info,labels=labels,autopct="%1.2f%%",shadow=True,textprops={"fontsize":15})
+plt.legend()
+plt.title("VIVEKS ECOMERS",fontsize=30,color="#0F009A",fontweight="bold")
+
+
+plt.show()
