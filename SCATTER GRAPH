@@ -1,0 +1,23 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+df=pd.read_csv("/home/vivek2006/Desktop/matplotlib/GDP.csv")
+plt.figure(figsize=(15, 2))
+plt.grid(axis="x")
+x=df["State"]
+y=df["GDP_INR_Lakh_Crore"]
+x1=df["State"]
+y1=df["Population_Million"]
+plt.scatter(x,y,marker="o",s=150,color="blue",label="GDP")
+plt.scatter(x1,y1,marker="o",s=150,color="red",label="POPULATION")
+plt.tight_layout()
+plt.legend()
+plt.xticks(rotation=45,ha="right")
+# plt.figure(figsize=(20, 6))
+# plt.xticks(rotation=45, ha='right')
+plt.title("INDIA survey",fontsize=30,color="#000000")
+plt.xlabel("STATES",fontsize=15,color="#000000")
+plt.ylabel("LAKHCORES",fontsize=15,color="#000000")
+
+
+plt.show()
